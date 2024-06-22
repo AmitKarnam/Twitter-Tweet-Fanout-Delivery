@@ -1,0 +1,12 @@
+{
+    "RabbitMQ":{
+        "host":"",
+        "port":"",
+        "user":"",
+        "password":"",
+        "exchange_name":"",
+        "exchange_type":""
+    }
+}
+
+
