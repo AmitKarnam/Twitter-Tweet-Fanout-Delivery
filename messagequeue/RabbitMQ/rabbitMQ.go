@@ -2,7 +2,6 @@ package rabbitmq
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"time"
 
@@ -134,10 +133,9 @@ func ConsumeTweet(user string) []string {
 	for {
 		select {
 		case msg := <-msgs:
-			fmt.Println(string(msg.Body))
 			tweetsHome = append(tweetsHome, string(msg.Body))
 		case <-timeoutCh:
-			fmt.Println("Timeout reached, stopping consumption")
+			log.Println("Timeout for consumption of tweets: ", timeout)
 			return tweetsHome
 		}
 	}

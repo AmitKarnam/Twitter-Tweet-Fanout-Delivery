@@ -1,11 +1,11 @@
 {
     "RabbitMQ":{
-        "host":"",
-        "port":"",
-        "user":"",
-        "password":"",
-        "exchange_name":"",
-        "exchange_type":""
+        "host":"localhost",
+        "port":"5672",
+        "user":"guest",
+        "password":"guest",
+        "exchange_name":"tweet_delivery",
+        "exchange_type":"direct"
     }
 }
 
